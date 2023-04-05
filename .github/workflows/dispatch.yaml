@@ -1,0 +1,25 @@
+name: Dispatch
+
+on:
+  workflow_dispatch:
+    inputs:
+      event_type:
+        required: false
+        default: 'default'
+        type: string
+      repo:
+        required: false
+        default: 'default'
+        type: string
+
+jobs:
+  test:
+    runs-on: ubuntu-latest
+    steps:
+      - run: echo "🚩 The job was automatically triggered by a ${{ github.event_name }} event."
+      - run: echo "🔎 The name of your branch is ${{ github.ref }} and your repository is ${{ github.repository }}."
+      - name: Event Information
+        run: |
+          echo "Inputs event_type '${{ inputs.event_type }}'"
+          echo "Event is '${{ github.event.action }}'" 
+          echo "Message is '${{ github.event.client_payload.message }}'"

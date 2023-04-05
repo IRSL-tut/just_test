@@ -1,0 +1,35 @@
+name: Call
+
+on:
+  workflow_dispatch:
+
+jobs:
+  test:
+    runs-on: ubuntu-latest
+    steps:
+      - run: echo "🚩 The job was automatically triggered by a ${{ github.event_name }} event."
+      - run: echo "🔎 The name of your branch is ${{ github.ref }} and your repository is ${{ github.repository }}."
+      - name: Event Information
+        run: |
+          echo "Event is '${{ github.event.action }}'" 
+          echo "Message is '${{ github.event.client_payload.message }}'"
+      - name: Trigger Workflow
+        uses: actions/github-script@v6
+        with:
+          script: |
+            github.rest.actions.createWorkflowDispatch({
+              owner: 'IRSL-tut',
+              repo: context.repo.repo,
+              workflow_id: 'dispatch.yaml',
+              ref: 'main',
+              inputs: {
+                event_type: 'test',
+              }
+            })
+#      - name: Call
+#        run: |
+#          curl -X POST https://api.github.com/repos/IRSL-tut/just_test/dispatches \
+#          -H 'Accept: application/vnd.github.everest-preview+json' \
+#          -u ${{ secrets.GITHUB_TOKEN }} \
+#          --data '{"event_type": "my_event", "client_payload": { "customField": "customValue" }}'
+#
