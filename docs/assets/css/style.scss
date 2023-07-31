@@ -9,10 +9,6 @@ body {
 }
 section {
 }
-nav {
-}
-footer {
-}
 
 @import 'jekyll-theme-leap-day';
 
@@ -39,30 +35,14 @@ header {
 
   .button {
     border: 1px solid #252550;
-    background: linear-gradient(rgb(40, 40, 90), rgb(15, 15, 25));
+    background: linear-gradient(rgb(40, 40, 120), rgb(30, 30, 80));
+    &:hover {
+        background: linear-gradient(rgb(40, 40, 160), rgb(40, 40, 120));
+        background-color: #ffeca0;
+    }
   }
 }
 
 section {
-  width: 900px;
   background: #fbfbfb;
-}
-
-nav {
-  width: 230px;
-  position: fixed;
-  top: 220px;
-  left: 40%; /* */
-  margin-left: -680px; /* */
-  text-align: right;
-}
-
-footer {
-  width: 180px;
-  position: fixed;
-  left: 40%; /* */
-  margin-left: -630px; /* */
-  bottom: 20px;
-  text-align: right;
-  line-height: 16px;
 }
