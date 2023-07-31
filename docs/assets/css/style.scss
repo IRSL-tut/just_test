@@ -35,14 +35,15 @@ header {
 
   .button {
     border: 1px solid #252550;
-    background: linear-gradient(rgb(40, 40, 120), rgb(30, 30, 80));
+    background: linear-gradient(rgb(25, 25, 50), rgb(15, 15, 40));
     &:hover {
-        background: linear-gradient(rgb(40, 40, 160), rgb(40, 40, 120));
+        background: linear-gradient(rgb(209, 0, 10), rgb(180, 0, 7));
         background-color: #ffeca0;
     }
   }
 }
 
 section {
-  background: #fbfbfb;
+    background: #fbfbfb;
+    width: 980px;
 }
