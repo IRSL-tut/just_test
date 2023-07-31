@@ -11,6 +11,8 @@ section {
 }
 nav {
 }
+footer {
+}
 
 @import 'jekyll-theme-leap-day';
 
@@ -51,7 +53,7 @@ nav {
   position: fixed;
   top: 220px;
   left: 40%; /* */
-  margin-left: -580px; /* */
+  margin-left: -680px; /* */
   text-align: right;
 }
 
@@ -59,7 +61,7 @@ footer {
   width: 180px;
   position: fixed;
   left: 40%; /* */
-  margin-left: -530px; /* */
+  margin-left: -630px; /* */
   bottom: 20px;
   text-align: right;
   line-height: 16px;
