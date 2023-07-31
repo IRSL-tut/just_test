@@ -1,5 +1,5 @@
 title: TEST - Leap Day theme
 description: IRSL TEST - Leap Day is a theme for GitHub Pages.
-show_downloads: true
+show_downloads: false
 # theme: jekyll-theme-minimal
 theme: jekyll-theme-leap-day
