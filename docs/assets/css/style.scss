@@ -37,7 +37,7 @@ header {
 
   .button {
     border: 1px solid #252550;
-    background: linear-gradient(rgb(25, 25, 40), rgb(15, 15, 25));
+    background: linear-gradient(rgb(40, 40, 90), rgb(15, 15, 25));
   }
 }
 
@@ -50,16 +50,16 @@ nav {
   width: 230px;
   position: fixed;
   top: 220px;
-  left: 50%;
-  margin-left: -580px;
+  left: 40%; /* */
+  margin-left: -580px; /* */
   text-align: right;
 }
 
 footer {
   width: 180px;
   position: fixed;
-  left: 50%;
-  margin-left: -530px;
+  left: 40%; /* */
+  margin-left: -530px; /* */
   bottom: 20px;
   text-align: right;
   line-height: 16px;
