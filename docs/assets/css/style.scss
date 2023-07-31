@@ -15,13 +15,7 @@ nav {
 @import 'jekyll-theme-leap-day';
 
 body {
-  font:14px/22px 'Quattrocento Sans', "Helvetica Neue", Helvetica, Arial, sans-serif;
-  color:#2b2b2b;
-  font-weight:300;
-  margin: 0px;
-  padding:0px 0 20px 0px;
-  /* background: url(../images/body-background.png) #eae6d1; */
-  background: #D4D4D4;
+  background: #E0E0E0;
 }
 
 header {
@@ -161,11 +155,11 @@ section {
 }
 
 nav {
-  width: 330px;
+  width: 230px;
   position: fixed;
   top: 220px;
-  left:50%;
-  margin-left:-780px;
+  left: 50%;
+  margin-left: -580px;
   text-align: right;
 
   ul {
@@ -213,4 +207,14 @@ nav {
     //   padding-right:13px;
     // }
   }
+}
+
+footer {
+  width: 180px;
+  position: fixed;
+  left: 50%;
+  margin-left: -530px;
+  bottom: 20px;
+  text-align: right;
+  line-height: 16px;
 }
